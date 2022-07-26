@@ -14,7 +14,7 @@ const AddComment = (props) => {
                 ...comments,
                 elementId : props.asin
             })
-        },[]
+        },[props.asin]
     )
 
    const sendComment = async (e) => {
